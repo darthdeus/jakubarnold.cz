@@ -1,8 +1,8 @@
-require 'RedCloth'
+require 'rdiscount'
 
 task :markup do
-  content = open('main.txt').readlines.join ""
-  html = RedCloth.new(content)
+  content = open('views/skills.md').readlines.join ""
+  html = RDiscount.new(content)
   File.open('output.html', 'w') do |f|
     f.print html.to_html
   end
