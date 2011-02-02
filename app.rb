@@ -9,13 +9,12 @@ end
 
 
 get '/' do
-  content_type 'text/css', :charset => 'utf-8'
   @header = markdown :header
   @skills = markdown :skills
   haml :index, :layout => :layout
 end
 
 get '/style.css' do
-  content_type 'text/css'
+  headers 'Content-Type' => 'text/css;charset=utf-8'
   sass :style
 end
