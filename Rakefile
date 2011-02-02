@@ -10,7 +10,7 @@ end
 
 task :haml do
   `haml template.haml > public/index.html`
-  `sass style.sass > public/style.css` 
+  `sass views/style.sass > public/style.css` 
 end
 
 task :compile => [:markup, :haml]
