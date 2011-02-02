@@ -8,7 +8,6 @@ def markdown(template)
 end
 
 
-
 get '/' do
   @header = markdown :header
   @skills = markdown :skills
