@@ -9,6 +9,7 @@ end
 
 
 get '/' do
+  headers 'Content-Type' => 'text/html;charset=utf-8'
   @header = markdown :header
   @skills = markdown :skills
   haml :index, :layout => :layout
