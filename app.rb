@@ -8,6 +8,12 @@ def markdown(template)
 end
 
 
+helpers do
+  def javascript(src)
+    haml "%script{:type => 'text/javascript', :src => '#{src}'}"
+  end
+end
+
 get '/' do
   headers 'Content-Type' => 'text/html;charset=utf-8'
   @header = markdown :header
