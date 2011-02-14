@@ -2,6 +2,13 @@ GEM
   remote: http://rubygems.org/
   specs:
     haml (3.0.25)
+    prawn (0.8.4)
+      prawn-core (>= 0.8.4, < 0.9)
+      prawn-layout (>= 0.8.4, < 0.9)
+      prawn-security (>= 0.8.4, < 0.9)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
     rdiscount (1.6.5)
     watchr (0.7)
 
@@ -10,5 +17,6 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  prawn
   rdiscount
   watchr

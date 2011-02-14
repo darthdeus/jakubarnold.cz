@@ -24,7 +24,7 @@
 * Linux
   * práce s Apache, MySQL, nginx, memcached
   * základy skriptování v bashi
-* Tvorba grafických návrhů v Photoshopu a Illustratoru
+* Tvorba grafických návrhů v Photoshopu
 
 
 ## Ostatní
